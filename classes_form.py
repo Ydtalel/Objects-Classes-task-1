@@ -4,6 +4,7 @@ from random import *
 class Animal:
     animals = []
     weight_count = 0
+
     def __init__(self, name, weight):
         self.name = name
         self.weight = weight
