@@ -11,9 +11,9 @@ class Animal:
         Animal.animals.append(self)
 
     def count_class_weight(self):
-        for i in Animal.animals:
-            if isinstance(self, type(i)):
-                Animal.weight_count += i.weight
+        for animal in Animal.animals:
+            if isinstance(self, type(animal)):
+                Animal.weight_count += animal.weight
 
         return Animal.weight_count
 
@@ -70,4 +70,4 @@ class Sheep(Animal):
         return f"Баран '{self.name}' говорит Бе-еее-ее!"
 
     def cut(self):
-        return f"Баран '{self.name}' пострижен под {choice(['на лысо', 'пуделя'])}."
+        return f"Баран '{self.name}' пострижен под {choice(['ноль', 'пуделя'])}."
